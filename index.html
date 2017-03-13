@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Ballet Beautiful ART Festival</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css" media="screen,projection"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,900&subset=latin,cyrillic'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant+Infant:300,400,500,600,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            font-size: calc(0.5vw + 1vh + 0.5vmin);
+        }
+        body {
+            font: 100 35%/1.5 'Comfortaa', cursive !important;
+            position: relative;
+
+        }
+
+        .logo {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999999;
+        }
+
+
+        a.logo {
+            top: 0;
+            left: 1.3em;
+            font-size: 4em;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        /*
+        .logo img {
+            width: 500%;
+            height: auto;
+            left: -260%;
+            top: -9%;
+            position: absolute;
+        }*/
+
+        .logo img {
+            width: 5.8em;
+            height: auto;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+        .intro {
+            font-size: 2em;
+            position: relative;
+            margin: 2em;
+            padding: 0 0 3em 1em;
+            cursor: pointer;
+            color: #fff;
+            line-height: 1.5;
+            max-width: 30em;
+            width: 100%;
+            font-weight: 100;
+        }
+        .intro2,
+        .intro3,
+        .intro4,
+        .intro5 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 0 0 5em 3em;
+            cursor: pointer;
+            color: #fff;
+            font-size: 2em;
+            max-width: 30em;
+            width: 100%;
+        }
+        h1, h2 {
+            margin-bottom: 1em;
+            line-height: 1.4;
+            font-weight: 100;
+            font-size: 1.5em;
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        h1,
+        h2.long {
+            font-size: 1.5em;
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        p {
+            font-size: 1.7em;
+            line-height: 1.4;
+        }
+
+        a {
+            position: absolute;
+            bottom: 1em;
+            left: 2.7em;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2.5em;
+            margin-top: 1em;
+            z-index: 999999;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        a.registration {
+            position: absolute;
+            bottom: 3.5em;
+            left: 2.2em;
+            color: #fff;
+            text-decoration: none;
+            font-size: 3em;
+            margin-top: 1em;
+            z-index: 999999;
+        }
+
+        a.registration:hover {
+            text-decoration: underline;
+        }
+
+        .contacts {
+            position: absolute;
+            top: 1.99em;
+            right: 3em;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            z-index: 999999;
+            text-align: right;
+        }
+
+        .contacts .phone {
+            font-size: 2.4em;
+            margin-top: 1.6em;
+        }
+
+        p.email {
+            font-size: 1.63em;
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        i.fa, span.pointe {
+            margin-right: 10px;
+        }
+
+        #CrossFade {
+            background: #fff;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+
+        }
+        #CrossFade img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            height: auto;
+            background: #000;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            opacity: 0;
+            -webkit-transform: scale(1.4) rotate(12deg);
+            transform: scale(1.4) rotate(12deg);
+            -webkit-animation: CrossFade 30s infinite;
+            animation: CrossFade 30s infinite;
+            top: 0;
+        }
+
+        #CrossFade img:nth-child(5) {
+            -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+        }
+        #CrossFade img:nth-child(4) {
+            -webkit-animation-delay: 18s;
+            animation-delay: 18s;
+        }
+        #CrossFade img:nth-child(3) {
+            -webkit-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+        #CrossFade img:nth-child(2) {
+            -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+        #CrossFade img:nth-child(1) {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        @-webkit-keyframes CrossFade {
+            25% {
+                opacity: 1;
+                -webkit-transform: scale(1) rotate(0);
+                transform: scale(1) rotate(0);
+            }
+            40% {
+                opacity: 0;
+            }
+        }
+        @keyframes CrossFade {
+            25% {
+                opacity: 1;
+                -webkit-transform: scale(1) rotate(0);
+                transform: scale(1) rotate(0);
+            }
+            40% {
+                opacity: 0;
+            }
+        }
+
+        audio {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            opacity: 0.3;
+        }
+
+        .pointe2 {
+            position: absolute;
+            bottom: 11em;
+            left: 4em;
+            z-index: 999;
+        }
+
+        .pointe2 img {
+            width: 5em;
+            height: auto;
+            z-index: 999;
+        }
+
+       /* a.registration {
+            left: 4em;
+        }*/
+
+
+/*******************************************************************
+     1400 -
+*******************************************************************/
+        @media (max-width: 1400px) {
+            a.logo {
+                width: 200px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body translate="no" >
+
+<div class="logo">
+    <a class="logo" href="#"><img src="img/logo-ballet.png" alt="Всероссийский  конкурс студентов хореографических отделений колледжей (училищ)культуры и школ искусств"></a>
+</div>
+
+
+<div id="CrossFade">
+    <img src="img/14new.jpg" alt="img"/>
+    <img src="img/10new.jpg" alt="img"/>
+    <img src="img/3new.jpg" alt="img"/>
+    <img src="img/9new.jpg" alt="img"/>
+    <img src="img/10new.jpg" alt="img"/>
+
+
+
+
+    <a href="mailto:vlodov@yandex.ru" target="_blank" title="email">vlodov@yandex.ru</a>
+
+
+
+   <a class="fadeIn wow"  data-wow-delay="1.5s" href="http://balletfestivalspb.com/rules.pdf" download="http://balletfestivalspb.com/rules.pdf"><i class="fa fa-info-circle" aria-hidden="true"></i>Скачать положение конкурса</a>
+    <div class="intro fadeIn wow" data-wow-delay="1s">
+        <h1 class="fadeOut wow" data-wow-delay="9s">Всероссийский конкурс-фестиваль классической хореографии</h1>
+        <p class="fadeOut wow" data-wow-delay="9s">В рамках проекта «Развитие и сохранение традиций русского балета»</p>
+    </div>
+    <div class="intro2 fadeIn wow" data-wow-delay="9.5s">
+        <h2 class="fadeOut wow" data-wow-delay="18s">06.01.2017-11.01.2017</h2>
+        <p class="fadeOut wow" data-wow-delay="18s">на сцене Зеркального зала дворца Белосельских-Белозерских</p>
+    </div>
+    <div class="intro3 fadeIn wow" data-wow-delay="18.5s">
+        <p class="fadeOut wow" data-wow-delay="27s">Ввиду высокого интереса к мероприятию просьба отправить заявку на участие заблаговременно.</p>
+    </div>
+
+
+   <!-- <div class="intro4 fadeIn wow" data-wow-delay="18.5s">
+        <h2 class="fadeOut wow" data-wow-delay="24s">Состав участников:</h2>
+        <p class="fadeOut wow" data-wow-delay="24s">в (конкурсе могут  принять) участие коллективы классического танца детских школ искусств, студий, высших и средних специальных учебных заведений и группы малых форм независимо от ведомственной принадлежности</p>
+    </div>
+    <div class="intro5 fadeIn wow" data-wow-delay="24.5s">
+        <h2 class="long fadeOut wow" data-wow-delay="30s">Творческая лаборатория и мастер-классы ведущих педагогов классического танца города Санкт-Петербурга</h2>
+        <p class="fadeOut wow" data-wow-delay="30s">Текст с красивыми словами о балете</p>
+    </div>-->
+
+    <a class="fadeIn wow registration"  data-wow-delay="30.5s" href="http://balletfestivalspb.com/zayavka.pdf" download="http://balletfestivalspb.com/zayavka.pdf"><i class="fa fa-info-circle" aria-hidden="true"></i>Скачать анкету для регистрации</a>
+    <div class="contacts">
+        <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 800-2000-019</p>
+        <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>beautifulart@bk.ru</p>
+    </div>
+</div>
+
+
+<audio controls autoplay loop>
+    <source src="music.mp3" type="audio/mp3; codecs=vorbis"  controls="controls"/>
+    <source src="music.mp3" type="audio/mpeg"/>
+</audio>
+
+</script><script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>
+
+
